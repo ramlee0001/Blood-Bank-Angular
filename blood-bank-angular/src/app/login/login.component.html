@@ -1,0 +1,22 @@
+<div class="background-wrap">
+  <div class="background"></div>
+</div>
+<div style="background-color: black; color:white; text-align:center">
+  <h1>{{receivedMessage}}</h1>
+</div>
+<form id="accesspanel" action="">
+  <h1 id="litheader">Blood Bank</h1>
+  <div class="inset">
+    <p>
+      <input type="text" name="username" [(ngModel)]="logindetails.userName" id="email" placeholder="username">
+    </p>
+    <p>
+      <input type="password" name="password" [(ngModel)]="logindetails.password" id="password" placeholder="password">
+    </p>
+  </div>
+  <p class="p-container">
+    <input type="submit" name="Login" id="go" value="Login" (click)="getAccessToken()">
+    <input type="button" name="Register" value="Register" (click)="goToRegisterPage()" />
+  </p>
+</form>
+

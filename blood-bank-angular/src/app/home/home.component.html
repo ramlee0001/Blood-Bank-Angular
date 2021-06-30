@@ -1,0 +1,25 @@
+
+<div>
+  <div style="background-color: black; color:white; text-align:center">
+    <h1>{{viewprofilemessage}}</h1>
+  </div>
+  <button type="button" (click)="viewprofile()">View Profile</button>
+</div>
+<div>
+  <h3>Donate Blood Here</h3>
+  <div style="background-color: black; color:white; text-align:center">
+    <h1>{{donatebloodmessage}}</h1>
+  </div>
+  <button type="button" (click)="donateblood()">Donate Blood</button>
+</div>
+<div>
+  <h3>Request for Blood Here</h3>
+  <div style="background-color: black; color:white; text-align:center">
+    <h1>{{requestbloodmessage}}</h1>
+  </div>
+  <input type="text" placeholder="Enter the Required Blood Group" [(ngModel)]="bloodgroup" />
+  <button type="button" (click)="requestblood()">Request Blood</button>
+</div>
+<div>
+  <input type="button" value="Logout" (click)="logout()"/>
+</div>
